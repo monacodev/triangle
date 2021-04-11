@@ -17,8 +17,10 @@ public class TriangleShape2 {
 			size = sc.nextInt();
 
 			// Numerical input: if the number is < 2 the default size will be 2
-
-
+			if (size < 2) {
+				size = 2;
+			}
+			
 		} catch (InputMismatchException e) { // exception si on saisie un mauvais format
 			System.out.println("La saisie ne correspond pas au bon format, le nombre doit être un entier ");
 		}
